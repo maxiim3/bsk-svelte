@@ -1,13 +1,9 @@
 <script lang="ts">
 	import BskPost from '$lib/components/bsk-post.svelte';
-	import { Origami } from '@lucide/svelte';
 </script>
 
 <header class="border-base-300 flex flex-col gap-2 border-b p-2">
-	<div class="grid place-content-center"><Origami class="fill-info" size={32} /></div>
-	<ul>
-		<li class="underline">My Feed</li>
-	</ul>
+	<h1>JOHN DOE</h1>
 </header>
 
 <section>
