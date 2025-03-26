@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { AvatarUIProps } from './avatar.domain';
 
-	const { avatar, size }: AvatarUIProps = $props();
+	const { avatar, styles }: AvatarUIProps = $props();
 </script>
 
-<div class="avatar w-fit" class:avatar-online={avatar.isOnline}>
-	<div class={['rounded-full', `w-${size || '12'}`]}>
+<div class={['avatar', styles]} class:avatar-online={avatar.isOnline}>
+	<div class="w-full rounded-full">
 		<img alt={avatar.altText} src={avatar.source} />
 	</div>
 </div>

@@ -1,4 +1,10 @@
 @import 'tailwindcss';
+
+@theme {
+	--container-xs: 16rem;
+	--container-sidebar: 12rem;
+}
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";

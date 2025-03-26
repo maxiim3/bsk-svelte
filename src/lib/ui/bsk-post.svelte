@@ -27,7 +27,7 @@
 <article class="border-base-300 text-base-content grid grid-cols-[auto_1fr] border-b p-4">
 	<section class="relative pr-4">
 		<div class="avatar avatar-offline transition-transform duration-300 group-hover:scale-50">
-			<Avatar avatar={author.avatar} />
+			<Avatar avatar={author.avatar} styles="w-12" />
 			<a href="/profile" class="absolute inset-0" aria-label={author.name}></a>
 		</div>
 	</section>

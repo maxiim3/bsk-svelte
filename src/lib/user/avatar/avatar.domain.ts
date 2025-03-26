@@ -1,4 +1,5 @@
 import type { ImageData } from '$lib/root/atoms/image.domain';
+import type { ClassValue } from 'svelte/elements';
 
 // Base data for entity
 export interface AvatarData extends ImageData {
@@ -16,10 +17,8 @@ export class Avatar implements AvatarData {
 	) {}
 }
 
-type Sizes = 'sm' | 'md' | 'lg' | 'xl';
-
 // Component Interface
 export interface AvatarUIProps {
 	avatar: Avatar;
-	size?: Sizes;
+	styles?: ClassValue;
 }
